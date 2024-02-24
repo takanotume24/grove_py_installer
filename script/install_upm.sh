@@ -9,6 +9,7 @@ mraa_build_dir="${base_dir}/mraa/build"
 PKG_CONFIG_PATH="${PKG_CONFIG_PATH:-}:${mraa_build_dir}/lib/pkgconfig"
 
 sudo apt install \
+    python-dev \
     clang \
     libmodbus-dev \
     libjpeg-dev \
