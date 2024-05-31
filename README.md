@@ -12,5 +12,5 @@ Script to install grove.py (https://github.com/Seeed-Studio/grove.py) to Raspber
 
     ```
     $ cd grove_py_installer
-    $ ./script/install_on_raspi.sh
+    $ ./script/install_on_raspi.sh [target_dir_path]
     ```

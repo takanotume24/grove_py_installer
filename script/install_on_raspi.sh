@@ -4,8 +4,9 @@ cd "$(dirname "$0")/.."
 
 sudo apt update && sudo apt upgrade -y
 
-installer_dir="$HOME/grove_py_installer/"
-base_dir="$HOME/spring_seminar_2024/"
+base_dir="$1"
+installer_dir="${base_dir}/grove_py_installer/"
+
 mkdir -p "${base_dir}"
 cd "${base_dir}"
 
