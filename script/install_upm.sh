@@ -3,6 +3,7 @@ set -euxo pipefail
 cd "$(dirname "$0")"
 
 base_dir="$1"
+installer_dir="$2"
 
 cd "${base_dir}/upm/"
 mraa_build_dir="${base_dir}/mraa/build"
@@ -30,7 +31,6 @@ cmake .. \
 make -j4
 sudo make install
 
-installer_dir="$HOME/grove_py_installer/"
 installed_python_version="$("${installer_dir}/script/get_python_version.sh")"
 
 # https://github.com/eclipse/upm/issues/696#issuecomment-771098228

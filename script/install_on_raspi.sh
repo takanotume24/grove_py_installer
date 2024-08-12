@@ -30,7 +30,7 @@ sudo apt install \
     -y
 
 # install mraa
-"${installer_dir}/script/install_mraa.sh" "${base_dir}"
+"${installer_dir}/script/install_mraa.sh" "${base_dir}" "${installer_dir}"
 
 # install upm
 "${installer_dir}/script/install_upm.sh" "${base_dir}"
