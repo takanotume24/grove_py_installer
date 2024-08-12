@@ -11,6 +11,10 @@ mkdir -p "${base_dir}"
 cd "${base_dir}"
 
 "${installer_dir}/script/git_clone.sh" https://github.com/Seeed-Studio/grove.py.git "${base_dir}/grove.py"
+cd "${base_dir}/grove.py"
+git checkout 88e277108522e8c92e61089d287cc4ad82ff251c
+
+cd "${base_dir}"
 "${installer_dir}/script/git_clone.sh" https://github.com/eclipse/mraa.git "${base_dir}/mraa"
 "${installer_dir}/script/git_clone.sh" https://github.com/eclipse/upm.git "${base_dir}/upm"
 
