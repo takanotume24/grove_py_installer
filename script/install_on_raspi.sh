@@ -30,10 +30,10 @@ sudo apt install \
     -y
 
 # install mraa
-"${installer_dir}/script/install_mraa.sh" "${base_dir}" "${installer_dir}"
+"${installer_dir}/script/install_mraa.sh" "${base_dir}"
 
 # install upm
-"${installer_dir}/script/install_upm.sh" "${base_dir}"
+"${installer_dir}/script/install_upm.sh" "${base_dir}" "${installer_dir}"
 
 # install python packages
 cd "${base_dir}/grove.py"
