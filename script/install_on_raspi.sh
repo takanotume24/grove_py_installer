@@ -1,11 +1,12 @@
 #!/bin/bash
 set -euxo pipefail
 cd "$(dirname "$0")/.."
+repository_root="$(pwd)"
 
 sudo apt update && sudo apt upgrade -y
 
 base_dir="$1"
-installer_dir="${base_dir}/grove_py_installer/"
+installer_dir="${repository_root}"
 
 mkdir -p "${base_dir}"
 cd "${base_dir}"
